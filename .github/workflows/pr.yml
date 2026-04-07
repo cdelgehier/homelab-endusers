@@ -6,6 +6,11 @@ on:
     paths:
       - 'apps/**'
 
+permissions:
+  contents: write       # annotate job pushes annotations back to PR branch
+  pull-requests: write  # validate/render jobs post PR comments
+  issues: write         # required by actions/github-script to post comments
+
 jobs:
   crossplane-ci:
     uses: cdelgehier/homelab-ci-templates/.github/workflows/crossplane-validate.yml@main

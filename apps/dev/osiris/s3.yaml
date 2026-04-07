@@ -5,7 +5,7 @@ metadata:
   # namespace: injected by ArgoCD destination.namespace (eu1-dev-osiris)
 spec:
   providerConfig: aws-personal-eu-west-1
-  bucket: osiris-dev-storage-cdelgehier3
+  bucket: osiris-dev-storage-cdelgehier4
   force_destroy: true
   tags:
     env: dev
