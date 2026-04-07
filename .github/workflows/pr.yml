@@ -1,0 +1,14 @@
+---
+name: Crossplane CI
+
+on:
+  pull_request:
+    paths:
+      - 'apps/**'
+
+jobs:
+  crossplane-ci:
+    uses: cdelgehier/homelab-ci-templates/.github/workflows/crossplane-validate.yml@main
+    with:
+      claims-path: apps
+    secrets: inherit
