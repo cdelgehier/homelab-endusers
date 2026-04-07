@@ -3,9 +3,16 @@ kind: XS3Bucket
 metadata:
   name: osiris-dev-storage
   # namespace: injected by ArgoCD destination.namespace (eu1-dev-osiris)
+
+  annotations:
+    homelab.io/github-repo-id: "1203860906"
+    homelab.io/github-repo: cdelgehier/homelab-endusers
+    homelab.io/github-pr: "2"
+    homelab.io/github-sha: c09b740cadfa94e6209839fb82647152f1798c99
+    homelab.io/github-comment-id: ""
 spec:
   providerConfig: aws-personal-eu-west-1
-  bucket: osiris-dev-storage-cdelgehier
+  bucket: osiris-dev-storage-cdelgehier2
   force_destroy: true
   tags:
     env: dev
