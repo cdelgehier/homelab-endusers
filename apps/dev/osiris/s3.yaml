@@ -8,7 +8,7 @@ metadata:
     homelab.io/github-repo-id: "1203860906"
     homelab.io/github-repo: cdelgehier/homelab-endusers
     homelab.io/github-pr: "2"
-    homelab.io/github-sha: e6998954dc33986e22f85b29e566fb18427892a1
+    homelab.io/github-sha: ea5f3c4f247f30d3fd5605cc8696812eb26d46f8
     homelab.io/github-comment-id: ""
 spec:
   providerConfig: aws-personal-eu-west-1
