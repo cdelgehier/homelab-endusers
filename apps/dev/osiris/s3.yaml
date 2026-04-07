@@ -1,0 +1,13 @@
+apiVersion: homelab.crossplane.io/v1alpha1
+kind: XS3Bucket
+metadata:
+  name: osiris-dev-storage
+  # namespace: injected by ArgoCD destination.namespace (eu1-dev-osiris)
+spec:
+  providerConfig: aws-personal-eu-west-1
+  bucket: osiris-dev-storage-cdelgehier
+  force_destroy: true
+  tags:
+    env: dev
+    app: osiris
+    managedBy: crossplane
